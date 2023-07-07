@@ -1,0 +1,234 @@
+body {
+    min-height: 1000px;
+}
+
+.mainImg {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.user2 {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+@media (max-width: 800px) {
+    body {
+        min-height: 800px;
+    }
+
+    .sticks {
+        position: absolute;
+        width: 30px;
+        top: 60px;
+        right: 60px;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .flex_itemOverview__1, .flex_itemOverview__2, .flex_itemOverview__3 {
+        flex-direction: column;
+    }
+
+    .item__flex {
+        width: 340px;
+    }
+
+    .flex_itemOverview__2 .item__flex {
+        width: 300px;
+    }
+
+    .phoneNote {
+        width: 300px;
+    }
+
+    .img__overview {
+        width: 300px;
+    }
+
+    .header {
+        margin-top: 100px;
+    }
+    .burger_meny {
+        width: 30px;
+        height: 30px;
+        background-image: url("../assets/svg/burger2.sv");
+        background-size: cover;
+        position: absolute;
+        right: 60px;
+        top: 60px;
+        z-index: 1;
+        opacity: 1;
+        animation: BackMeny 2s;
+        
+    }
+
+    .stick1_,  .stick2_, .stick3_{
+        width: 30px;
+        height: 3.5px;
+        background-color: black;
+        transition: 2s;
+        
+    }
+
+    .stick2_ {
+        margin-top: 10px;
+        transition: 1s;
+    }
+
+    .stick3_ {
+        margin-top: 10px;
+        transition: 1s;
+    }
+
+    .stick2_none {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .stick1_rotate {
+        transform: rotate(45deg);
+        transition: 1s;
+        position: absolute;
+        margin-top: 22px;
+    }
+
+    .stick3_rotate {
+        margin-bottom: 5px;
+        transform: rotate(-45deg);
+        transition: 1s;
+    }
+
+    .burger_meny_active {
+        display: block;
+        top: 0;
+        right: -10%;
+        width: 0%;
+        height: 100%;
+        background-image: none;
+        background-color: white;
+        list-style: none;
+        animation: flyMeny 2s linear; 
+        animation-fill-mode: forwards;
+        transition: 1s;
+        
+    }
+
+
+
+    .sticks {
+        position: absolute;
+        width: 30px;
+        top: -40px;
+        right: 60px;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    @keyframes flyMeny {
+        0% {
+            width: 0%;
+            opacity: 1;
+        }
+
+        50% {
+            width: 30%;
+            right: -5%;
+            
+        }
+
+        100% {
+            width: 60%;
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes BackMeny {
+        0% {
+            width: 60%;
+        }
+
+        50% {
+            width: 30%;
+            right: -5%;
+            
+        }
+
+        100% {
+            width: 0%;
+            right: -10%;
+        }
+    }
+
+
+
+    .burgerNoClick {
+        display: none;
+        transition: 1s;
+        margin-top: 70%;
+    }
+
+    .burgerClick {
+
+        display: block;
+        transition: 1s;
+    }
+
+
+    .stick1 {
+        position: absolute;
+        width: 75px;
+        height: 5px;
+        background-color: #000;
+        transform: rotate(45deg);
+    }
+
+    .stick2 {
+        position: absolute;
+        width: 75px;
+        height: 5px;
+        background-color: #000;
+        transform: rotate(135deg);
+    }
+
+    .burger_text {
+        margin: -100px 0 0 20px;
+    }
+
+    .list_item_burger {
+        font-size: 36px;
+        padding-bottom: 0px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .user2 {
+        text-align: left;
+        padding-left: 20px;
+        padding-bottom: 10px;
+    }
+    
+
+}
+
+
+.linkBack:visited {
+    color:black;
+  }
+
+  .date {
+    line-height: 1;
+    font-weight: 700;
+
+
+}
+
+@media (max-width: 400px) {
+    .sticks {
+        right: 30px;
+    }
+}

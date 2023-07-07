@@ -1,0 +1,285 @@
+body {
+    min-height: 800px;
+}
+
+
+
+.linkBack:visited {
+    color:black;
+  }
+
+
+.user {
+    font-weight: 700;
+}
+.mainImg6 {
+    display: block;
+    width: 650px;
+    margin: 0 auto;
+    height: 700px;
+    margin-bottom: 25px;
+}
+
+.mainImg7 {
+    display: block;
+    margin: 100px auto;
+    width: 220px;
+    padding:  0 0 0 50px;
+    
+}
+
+.flex__content {
+    margin-top: -60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.BackButtonNone {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+
+    .mainImg7 {
+        padding: 0;
+        
+    }
+    body {
+        min-height: 800px;
+    }
+
+    .flex__content {
+        display: block;
+        margin-top: 40px;
+    
+    }
+
+    .BackButton {
+        display: none;
+    }
+
+    .BackButtonNone {
+        display: inline;
+        text-align: center;
+    }
+
+    .linkBackNone {
+        display: block;
+        margin: 0 auto;
+        padding: 60px 0 0 0;
+        text-decoration: none;
+        color: black;
+    }
+
+    .mainImg6 {
+        max-width: 500px;
+        height: auto;
+    }
+}
+
+.date {
+    line-height: 1;
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .flex_itemOverview__1, .flex_itemOverview__2, .flex_itemOverview__3 {
+        flex-direction: column;
+    }
+
+    .item__flex {
+        width: 340px;
+    }
+
+    .flex_itemOverview__2 .item__flex {
+        width: 300px;
+    }
+
+    .phoneNote {
+        width: 300px;
+    }
+
+    .img__overview {
+        width: 300px;
+    }
+
+    .header {
+        margin-top: 100px;
+    }
+    .burger_meny {
+        width: 30px;
+        height: 30px;
+        background-image: url("../assets/svg/burger2.sv");
+        background-size: cover;
+        position: absolute;
+        right: 60px;
+        top: 60px;
+        z-index: 1;
+        opacity: 1;
+        animation: BackMeny 2s;
+        
+    }
+
+    .stick1_,  .stick2_, .stick3_{
+        width: 30px;
+        height: 3.5px;
+        background-color: black;
+        transition: 2s;
+        
+    }
+
+    .stick2_ {
+        margin-top: 10px;
+        transition: 1s;
+    }
+
+    .stick3_ {
+        margin-top: 10px;
+        transition: 1s;
+    }
+
+    .stick2_none {
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .stick1_rotate {
+        transform: rotate(45deg);
+        transition: 1s;
+        position: absolute;
+        margin-top: 22px;
+    }
+
+    .stick3_rotate {
+        margin-bottom: 5px;
+        transform: rotate(-45deg);
+        transition: 1s;
+    }
+
+    .burger_meny_active {
+        display: block;
+        top: 0;
+        right: -10%;
+        width: 0%;
+        height: 100%;
+        background-image: none;
+        background-color: white;
+        list-style: none;
+        animation: flyMeny 2s linear; 
+        animation-fill-mode: forwards;
+        transition: 1s;
+        
+    }
+
+
+
+    .sticks {
+        position: absolute;
+        width: 30px;
+        top: -40px;
+        right: 60px;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    @keyframes flyMeny {
+        0% {
+            width: 0%;
+            opacity: 1;
+        }
+
+        50% {
+            width: 30%;
+            right: -5%;
+            
+        }
+
+        100% {
+            width: 60%;
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes BackMeny {
+        0% {
+            width: 60%;
+        }
+
+        50% {
+            width: 30%;
+            right: -5%;
+            
+        }
+
+        100% {
+            width: 0%;
+            right: -10%;
+        }
+    }
+
+
+
+    .burgerNoClick {
+        display: none;
+        transition: 1s;
+        margin-top: 70%;
+    }
+
+    .burgerClick {
+
+        display: block;
+        transition: 1s;
+    }
+
+
+    .stick1 {
+        position: absolute;
+        width: 75px;
+        height: 5px;
+        background-color: #000;
+        transform: rotate(45deg);
+    }
+
+    .stick2 {
+        position: absolute;
+        width: 75px;
+        height: 5px;
+        background-color: #000;
+        transform: rotate(135deg);
+    }
+
+    .burger_text {
+        margin: -100px 0 0 20px;
+    }
+
+    .list_item_burger {
+        font-size: 36px;
+        padding-bottom: 0px;
+        color: #000;
+        text-decoration: none;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .mainImg6 {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .user2 {
+        font-weight: 400;
+        text-align: left;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sticks {
+        right: 30px;
+    }
+}
